@@ -18,7 +18,7 @@ library(sf)
 
 proj_region="Midwest Region"
 
-district_data<-read_csv("districts_data_all.csv") %>%
+district_data<-read_csv("https://github.com/jshannon75/district_change/raw/master/districts_data_all.csv") %>%
   mutate(year=as.character(year))
 ```
 
@@ -57,10 +57,10 @@ You can also map the data by year using tmap, also filtering out districts with 
 ``` r
 library(tmap)
 
-districts<-st_read("districts_all.shp",stringsAsFactors=FALSE) 
+districts<-st_read("https://github.com/jshannon75/district_change/raw/master/districts_all.geojson",stringsAsFactors=FALSE) 
 ```
 
-    ## Reading layer `districts_all' from data source `C:\Users\jshannon\Dropbox\Jschool\Teaching\Courses\Geog4300_6300 Fall 17\district_change\districts_all.shp' using driver `ESRI Shapefile'
+    ## Reading layer `districts_all' from data source `https://github.com/jshannon75/district_change/raw/master/districts_all.geojson' using driver `GeoJSON'
     ## Simple feature collection with 877 features and 2 fields
     ## geometry type:  MULTIPOLYGON
     ## dimension:      XY
@@ -72,10 +72,10 @@ districts<-st_read("districts_all.shp",stringsAsFactors=FALSE)
 districts_join<-left_join(districts,districts_select) %>%
   filter(st_abbr!="AK" & st_abbr!="HI")
 
-states<-st_read("USstates_48.geojson") %>% filter(Region==proj_region)
+states<-st_read("https://github.com/jshannon75/district_change/raw/master/USstates_48.geojson") %>% filter(Region==proj_region)
 ```
 
-    ## Reading layer `USstates_48' from data source `C:\Users\jshannon\Dropbox\Jschool\Teaching\Courses\Geog4300_6300 Fall 17\district_change\USstates_48.geojson' using driver `GeoJSON'
+    ## Reading layer `USstates_48' from data source `https://github.com/jshannon75/district_change/raw/master/USstates_48.geojson' using driver `GeoJSON'
     ## Simple feature collection with 48 features and 8 fields
     ## geometry type:  MULTIPOLYGON
     ## dimension:      XY
@@ -206,10 +206,10 @@ First, you should combine your individuals models and create one final model wit
 Second, you will create a *first differences model* at the state level with the efficency gap as your dependent variable. To do so, you'll need to calculate the mean values for each variable in each year and then calculate change from each year. Load this file with the state efficiency gaps based on our house data. A negative value shows an efficiency gap in favor of Democrats. A positive value favors Republicans.
 
 ``` r
-states_effgap<-st_read("USstates_48_effgap.geojson")
+states_effgap<-st_read("https://github.com/jshannon75/district_change/raw/master/USstates_48_effgap.geojson")
 ```
 
-    ## Reading layer `USstates_48_effgap' from data source `C:\Users\jshannon\Dropbox\Jschool\Teaching\Courses\Geog4300_6300 Fall 17\district_change\USstates_48_effgap.geojson' using driver `GeoJSON'
+    ## Reading layer `USstates_48_effgap' from data source `https://github.com/jshannon75/district_change/raw/master/USstates_48_effgap.geojson' using driver `GeoJSON'
     ## Simple feature collection with 76 features and 12 fields
     ## geometry type:  MULTIPOLYGON
     ## dimension:      XY
