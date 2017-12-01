@@ -1,0 +1,48 @@
+#Chapter template
+
+##Overview
+
+(Write briefly about this region, listing the states included within it, the range of seats/districts for each state, and the general partisan landscape (lean Republican vs. Democratic). The "include=FALSE" below keeps the code itself out of the document.)
+
+```{r, echo=FALSE, message=FALSE}
+#Here's some example code
+library(tidyverse)
+library(sf)
+
+proj_region="Midwest Region" #Adjust to fit your group
+
+district_data<-read_csv("https://github.com/jshannon75/geog4300/raw/master/Labs/Final_assignment/districts_data_all.csv") %>%
+  mutate(year=as.character(year))
+
+library(ggridges)
+districts_select<-district_data %>%
+  filter(Region==proj_region) %>%
+  group_by(year) %>%
+  mutate(median_dem=mean(pct_dem),
+         pct_dem_adj=ifelse(uncontest_r==1,66,ifelse(uncontest_d==1,36,pct_dem))) %>%
+  filter(total_vote!=-99)
+
+ggplot(districts_select,aes(x=pct_dem_adj,y=st_abbr))+
+  geom_density_ridges(scale=3)+
+  theme_ridges()+
+  geom_vline(aes(xintercept = median_dem),col="red")+
+  facet_wrap(~year)+
+  xlab("Pct. voting Democractic")+
+  ylab("")
+
+```
+
+##Descriptive analysis
+
+(Include both ridge plots and maps here showing your independent variable. Interpret what both tell you. You may also want to include state median values/IQR to help describe the patterns you see.)
+
+##Models
+
+(Include models for both years and scatterplots/fit lines. Interpret the coefficients and measures of model strength, focusing on direction, magnitude, and significance.)
+
+##Diagnostics
+
+(Look at model residuals using density plots and maps as shown in the assignment. Does your model show any warning signs based on this output).
+
+##Summary
+(What did this analysis tell you about the research questions: the relationship between your variable and voting and changes in the variable and its relationship to voting across time periods?)
