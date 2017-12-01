@@ -2,9 +2,14 @@
 
 ##Overview
 
-(Write briefly about this region, listing the states included within it, the range of seats/districts for each state, and the general partisan landscape (lean Republican vs. Democratic). The echo and message parameters below keeps the code itself out of the document.)
+(Write briefly about this region, listing the states included within it, the range of seats/districts for each state, and the general partisan landscape (lean Republican vs. Democratic).)
 
-```{r, echo=FALSE, message=FALSE}
+##Descriptive analysis
+(Include both ridge plots and maps here showing your independent variable. Interpret what both tell you. You may also want to include state median values/IQR to help describe the patterns you see.)
+
+###Percent not White, non-Hispanic
+(Example code below. The echo and message parameters below keeps the code itself out of the document.)
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 #Here's some example code
 library(tidyverse)
 library(sf)
@@ -32,11 +37,9 @@ ggplot(districts_select,aes(x=pct_dem_adj,y=st_abbr))+
 
 ```
 
-##Descriptive analysis
+(Example code for maps below. Note that here the spatial data files needs to be loaded in a chunk with "include=FALSE" to surpress the loading message.)
 
-(Include both ridge plots and maps here showing your independent variable. Interpret what both tell you. You may also want to include state median values/IQR to help describe the patterns you see. Note that here the spatial data files needs to be loaded in a chunk with "include=FALSE" to surpress the loading message.)
-
-```{r, include=FALSE}
+```{r, include=FALSE, echo=FALSE, message=FALSE}
 ##Some sample maps
 library(tmap)
 districts<-st_read("https://github.com/jshannon75/geog4300/raw/master/Labs/Final_assignment/districts_all.geojson",stringsAsFactors=FALSE) 
@@ -61,13 +64,70 @@ map2<-tm_shape(districts_2015,projection="2163") +
 tmap_arrange(map1,map2)
 ```
 
+###Median household income
+
+###Percent with a bachelor's degree
+
+
 ##Models
 
-(Include models for both years and scatterplots/fit lines. Interpret the coefficients and measures of model strength, focusing on direction, magnitude, and significance.)
+(Include models for both years and scatterplots/fit lines. Interpret the coefficients and measures of model strength, focusing on direction, magnitude, and significance. Also look at the model residuals using density plots and maps as shown in the assignment.)
 
-##Diagnostics
+###Percent not White, non-Hispanic
 
-(Look at model residuals using density plots and maps as shown in the assignment. Does your model show any warning signs based on this output).
+(Example code below for % Hispanic.)
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+model1990<-lm(pct_dem_adj~hisp_pct,data=districts_1990)
+model2015<-lm(pct_dem_adj~hisp_pct,data=districts_2015)
+```
+
+(You can use stargazer to summarise both models.)
+```{r star, results = 'asis', warning=FALSE, echo=FALSE, message=FALSE}
+library(stargazer, quietly = TRUE)
+stargazer(model1990, model2015, type = 'html',
+          dep.var.caption  = "Model results",
+          dep.var.labels = "Pct. voting democratic",
+          column.labels = c("1992", "2016"))
+```
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+ggplot(districts_select,aes(x=pct_dem_adj,y=hisp_pct)) + 
+  geom_point()+
+  geom_smooth(method = "lm", se = FALSE)+
+  facet_wrap(~year)
+```
+
+(Interpret what the models and scatterplot tells you--focus on magnitude, direction and significant.)
+
+###Median household income
+
+###Percent with a bachelor's degree
+
+###Multivariate models
+
+(Run the model with your combined variables here and show results for each year using stargazer as shown above. Compare results to your indivdual models. Check for multicollinearity using VIF and a correlation matrix if necessary. Use the BP test to check for heteroskedasticity. Lastly, check the statistical and spatial distribution of residuals as shown below.)
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+districts_1990$residuals<-as.numeric(scale(residuals(model1990)))
+districts_2015$residuals<-as.numeric(scale(residuals(model2015)))
+districts_combine<-rbind(districts_1990,districts_2015)
+
+ggplot(districts_combine,aes(x=residuals))+
+  geom_density(fill="grey")+
+  facet_wrap(~year)
+
+map3<-tm_shape(districts_1990,projection="2163") +
+  tm_polygons("residuals", breaks=c(-2,-1,-0.5,0.5,1,2),border.alpha=0)+
+  tm_shape(states) + tm_borders()
+
+map4<-tm_shape(districts_2015,projection="2163") +
+  tm_polygons("residuals", breaks=c(-2,-1,-0.5,0.5,1,2),border.alpha=0)+
+  tm_shape(states) + tm_borders()
+
+tmap_arrange(map3,map4)
+```
+
+(Interpret the results of these two models and whether your diagnostics point to significant problems.)
 
 ##Summary
-(What did this analysis tell you about the research questions: the relationship between your variable and voting and changes in the variable and its relationship to voting across time periods?)
+(What did this analysis tell you about the research questions: the relationship between your variables and voting patterns and changes in this relationship across time periods?)
