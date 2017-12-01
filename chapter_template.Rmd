@@ -2,7 +2,7 @@
 
 ##Overview
 
-(Write briefly about this region, listing the states included within it, the range of seats/districts for each state, and the general partisan landscape (lean Republican vs. Democratic). The "include=FALSE" below keeps the code itself out of the document.)
+(Write briefly about this region, listing the states included within it, the range of seats/districts for each state, and the general partisan landscape (lean Republican vs. Democratic). The echo and message parameters below keeps the code itself out of the document.)
 
 ```{r, echo=FALSE, message=FALSE}
 #Here's some example code
@@ -34,7 +34,32 @@ ggplot(districts_select,aes(x=pct_dem_adj,y=st_abbr))+
 
 ##Descriptive analysis
 
-(Include both ridge plots and maps here showing your independent variable. Interpret what both tell you. You may also want to include state median values/IQR to help describe the patterns you see.)
+(Include both ridge plots and maps here showing your independent variable. Interpret what both tell you. You may also want to include state median values/IQR to help describe the patterns you see. Note that here the spatial data files needs to be loaded in a chunk with "include=FALSE" to surpress the loading message.)
+
+```{r, include=FALSE}
+##Some sample maps
+library(tmap)
+districts<-st_read("https://github.com/jshannon75/geog4300/raw/master/Labs/Final_assignment/districts_all.geojson",stringsAsFactors=FALSE) 
+districts_join<-left_join(districts,districts_select) %>%
+  filter(st_abbr!="AK" & st_abbr!="HI")
+
+states<-st_read("https://github.com/jshannon75/geog4300/raw/master/Labs/Final_assignment/USstates_48.geojson") %>% filter(Region==proj_region)
+```
+
+```{r, echo=FALSE, message=FALSE}
+districts_1990<-districts_join %>% filter(year=="1990" & Region==proj_region)
+districts_2015<-districts_join %>% filter(year=="2015" & Region==proj_region)
+
+map1<-tm_shape(districts_1990,projection="2163") +
+  tm_polygons("pct_dem_adj", breaks=c(0,40,45,50,55,70,100),border.alpha=0)+
+  tm_shape(states) + tm_borders()
+
+map2<-tm_shape(districts_2015,projection="2163") +
+  tm_polygons("pct_dem_adj", breaks=c(0,40,45,50,55,70,100),border.alpha=0)+
+  tm_shape(states) + tm_borders()
+
+tmap_arrange(map1,map2)
+```
 
 ##Models
 
