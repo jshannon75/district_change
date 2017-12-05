@@ -23,14 +23,14 @@ library(ggridges)
 districts_select<-district_data %>%
   filter(Region==proj_region) %>%
   group_by(year) %>%
-  mutate(median_dem=mean(pct_dem),
+  mutate(median_dem=mean(pct_dem), #Change to your variable
          pct_dem_adj=ifelse(uncontest_r==1,66,ifelse(uncontest_d==1,36,pct_dem))) %>%
   filter(total_vote!=-99)
 
-ggplot(districts_select,aes(x=pct_dem_adj,y=st_abbr))+
+ggplot(districts_select,aes(x=pct_dem_adj,y=st_abbr))+ #x should be your variable
   geom_density_ridges(scale=3)+
   theme_ridges()+
-  geom_vline(aes(xintercept = median_dem),col="red")+
+  geom_vline(aes(xintercept = median_dem),col="red")+ #median should be your variable
   facet_wrap(~year)+
   xlab("Pct. voting Democractic")+
   ylab("")
