@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016</title>
+  <meta name="description" content="A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016">
+  <meta name="generator" content="bookdown 0.5.4 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016" />
+  
+  
+  
+
+<meta name="author" content="Students in UGA’s Introduction to Spatial Analysis class in Fall 2017">
+
+
+<meta name="date" content="2017-12-12">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="midwest.html">
+<link rel="next" href="concluding-thoughts.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>1.1</b> Overview</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.2</b> Data</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#voting"><i class="fa fa-check"></i><b>1.2.1</b> Voting</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#demographics"><i class="fa fa-check"></i><b>1.2.2</b> Demographics</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#analysis"><i class="fa fa-check"></i><b>1.3</b> Analysis</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#references"><i class="fa fa-check"></i><b>1.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="northeast.html"><a href="northeast.html"><i class="fa fa-check"></i><b>2</b> Northeast</a><ul>
+<li class="chapter" data-level="2.1" data-path="northeast.html"><a href="northeast.html#overview-1"><i class="fa fa-check"></i><b>2.1</b> Overview</a></li>
+<li class="chapter" data-level="2.2" data-path="northeast.html"><a href="northeast.html#descriptive-analysis"><i class="fa fa-check"></i><b>2.2</b> Descriptive Analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="northeast.html"><a href="northeast.html#percent-not-white-non-hispanic"><i class="fa fa-check"></i><b>2.2.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="2.2.2" data-path="northeast.html"><a href="northeast.html#median-household-income"><i class="fa fa-check"></i><b>2.2.2</b> Median Household Income</a></li>
+<li class="chapter" data-level="2.2.3" data-path="northeast.html"><a href="northeast.html#percent-with-a-bachelors-degree"><i class="fa fa-check"></i><b>2.2.3</b> Percent with a Bachelor’s Degree</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="northeast.html"><a href="northeast.html#models"><i class="fa fa-check"></i><b>2.3</b> Models</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="northeast.html"><a href="northeast.html#percent-not-white-non-hispanic-1"><i class="fa fa-check"></i><b>2.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="2.3.2" data-path="northeast.html"><a href="northeast.html#median-household-income-1"><i class="fa fa-check"></i><b>2.3.2</b> Median Household Income</a></li>
+<li class="chapter" data-level="2.3.3" data-path="northeast.html"><a href="northeast.html#percent-with-a-bachelors-degree-1"><i class="fa fa-check"></i><b>2.3.3</b> Percent with a Bachelor’s Degree</a></li>
+<li class="chapter" data-level="2.3.4" data-path="northeast.html"><a href="northeast.html#multivariate-models"><i class="fa fa-check"></i><b>2.3.4</b> Multivariate Models</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="northeast.html"><a href="northeast.html#summary"><i class="fa fa-check"></i><b>2.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="south.html"><a href="south.html"><i class="fa fa-check"></i><b>3</b> South</a><ul>
+<li class="chapter" data-level="3.1" data-path="south.html"><a href="south.html#overview-2"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="south.html"><a href="south.html#descriptive-analysis-1"><i class="fa fa-check"></i><b>3.2</b> Descriptive analysis</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="south.html"><a href="south.html#percent-not-white"><i class="fa fa-check"></i><b>3.2.1</b> Percent not White</a></li>
+<li class="chapter" data-level="3.2.2" data-path="south.html"><a href="south.html#median-household-income-2"><i class="fa fa-check"></i><b>3.2.2</b> Median household income</a></li>
+<li class="chapter" data-level="3.2.3" data-path="south.html"><a href="south.html#percent-with-a-bachelors-degree-2"><i class="fa fa-check"></i><b>3.2.3</b> Percent with a bachelor’s degree</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="south.html"><a href="south.html#models-1"><i class="fa fa-check"></i><b>3.3</b> Models</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="south.html"><a href="south.html#percent-not-white-non-hispanic-2"><i class="fa fa-check"></i><b>3.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="3.3.2" data-path="south.html"><a href="south.html#median-household-income-3"><i class="fa fa-check"></i><b>3.3.2</b> Median household income</a></li>
+<li class="chapter" data-level="3.3.3" data-path="south.html"><a href="south.html#percent-with-a-bachelors-degree-3"><i class="fa fa-check"></i><b>3.3.3</b> Percent with a bachelor’s degree</a></li>
+<li class="chapter" data-level="3.3.4" data-path="south.html"><a href="south.html#multivariate-models-1"><i class="fa fa-check"></i><b>3.3.4</b> Multivariate models</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="south.html"><a href="south.html#summary-1"><i class="fa fa-check"></i><b>3.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="midwest.html"><a href="midwest.html"><i class="fa fa-check"></i><b>4</b> Midwest</a><ul>
+<li class="chapter" data-level="4.1" data-path="midwest.html"><a href="midwest.html#overview-3"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
+<li class="chapter" data-level="4.2" data-path="midwest.html"><a href="midwest.html#descriptive-analysis-2"><i class="fa fa-check"></i><b>4.2</b> Descriptive analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="midwest.html"><a href="midwest.html#percent-not-white-non-hispanic-3"><i class="fa fa-check"></i><b>4.2.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="4.2.2" data-path="midwest.html"><a href="midwest.html#median-household-income-4"><i class="fa fa-check"></i><b>4.2.2</b> Median household income</a></li>
+<li class="chapter" data-level="4.2.3" data-path="midwest.html"><a href="midwest.html#percent-with-a-bachelors-degree-4"><i class="fa fa-check"></i><b>4.2.3</b> Percent with a bachelor’s degree</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="midwest.html"><a href="midwest.html#models-2"><i class="fa fa-check"></i><b>4.3</b> Models</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="midwest.html"><a href="midwest.html#percent-not-white-non-hispanic-4"><i class="fa fa-check"></i><b>4.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="4.3.2" data-path="midwest.html"><a href="midwest.html#median-household-income-5"><i class="fa fa-check"></i><b>4.3.2</b> Median household income</a></li>
+<li class="chapter" data-level="4.3.3" data-path="midwest.html"><a href="midwest.html#percent-with-a-bachelors-degree-5"><i class="fa fa-check"></i><b>4.3.3</b> Percent with a bachelor’s degree</a></li>
+<li class="chapter" data-level="4.3.4" data-path="midwest.html"><a href="midwest.html#multivariate-models-2"><i class="fa fa-check"></i><b>4.3.4</b> Multivariate models</a></li>
+<li class="chapter" data-level="4.3.5" data-path="midwest.html"><a href="midwest.html#residual-analysis"><i class="fa fa-check"></i><b>4.3.5</b> Residual Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="midwest.html"><a href="midwest.html#summary-2"><i class="fa fa-check"></i><b>4.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="west.html"><a href="west.html"><i class="fa fa-check"></i><b>5</b> West</a><ul>
+<li class="chapter" data-level="5.1" data-path="west.html"><a href="west.html#overview-4"><i class="fa fa-check"></i><b>5.1</b> Overview</a></li>
+<li class="chapter" data-level="5.2" data-path="west.html"><a href="west.html#descriptive-analysis-3"><i class="fa fa-check"></i><b>5.2</b> Descriptive analysis</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="west.html"><a href="west.html#percent-not-white-non-hispanic-5"><i class="fa fa-check"></i><b>5.2.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="5.2.2" data-path="west.html"><a href="west.html#median-household-income-6"><i class="fa fa-check"></i><b>5.2.2</b> Median household income</a></li>
+<li class="chapter" data-level="5.2.3" data-path="west.html"><a href="west.html#percent-with-a-bachelors-degree-6"><i class="fa fa-check"></i><b>5.2.3</b> Percent with a bachelor’s degree</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="west.html"><a href="west.html#models-3"><i class="fa fa-check"></i><b>5.3</b> Models</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="west.html"><a href="west.html#percent-not-white-non-hispanic-6"><i class="fa fa-check"></i><b>5.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="5.3.2" data-path="west.html"><a href="west.html#median-household-income-7"><i class="fa fa-check"></i><b>5.3.2</b> Median household income</a></li>
+<li class="chapter" data-level="5.3.3" data-path="west.html"><a href="west.html#percent-with-a-bachelors-degree-7"><i class="fa fa-check"></i><b>5.3.3</b> Percent with a bachelor’s degree</a></li>
+<li class="chapter" data-level="5.3.4" data-path="west.html"><a href="west.html#multivariate-models-3"><i class="fa fa-check"></i><b>5.3.4</b> Multivariate models</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="west.html"><a href="west.html#summary-3"><i class="fa fa-check"></i><b>5.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html"><i class="fa fa-check"></i><b>6</b> Concluding thoughts</a><ul>
+<li class="chapter" data-level="6.1" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#trends-in-regional-models"><i class="fa fa-check"></i><b>6.1</b> Trends in regional models</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#comparison-to-national-models"><i class="fa fa-check"></i><b>6.1.1</b> Comparison to national models</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#limitations"><i class="fa fa-check"></i><b>6.2</b> Limitations</a></li>
+<li class="chapter" data-level="6.3" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#final-thoughts"><i class="fa fa-check"></i><b>6.3</b> Final thoughts</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="west" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> West</h1>
+<div id="overview-4" class="section level2">
+<h2><span class="header-section-number">5.1</span> Overview</h2>
+<p>Our U.S. census region is the West Region, home to legends such as Billy the Kid and Butch Cassidy. In our project we will be delving into a three variables and contrasting the political landscapes of districts between the republican party and democratic party within our region’s states. The variables we are examining are non-white, non-hispanic, percent with a bachelor’s degree and median household income. We will be investigating these as individual variables and then discuss any relationships that we notice between them should that be applicable. We will also analyze the influence of these variables and voting patterns to see if there are instances of gerrymandering. It is important to note that we are excluding Alaska and Hawaii because we were told to leave it out for cartographic reasons, even though we understand that they are geographically included in the West Region. The states that will be included in our project, that encompass the remaining West Region are: Washington, Wyoming, Montana, California, Nevada, Idaho, Utah, Oregon, Arizona, Colorado, and New Mexico.</p>
+<p>In regard to political affiliation between republican or democratic parties, the region as a whole appears to lean right in favor of conservative, republican representatives. This was surprising at first because of the left leaning trend along the Pacific coastal states. When we look at the breakdown of current districts within each state we can conclude which way the state leans on a partisan level. By using our district data we know how many districts are within each state and how voters voted in the 1992 and 2016 elections which allows us to conclude whether it is a democrat leaning or republican leaning state. For example, California has 53 districts and while both republicans and democrats are voted for across districts, largely the state leans left in favor of democrats. Utah, Arizona, Colorado, and Idaho lean right. Montana actually went from leaning right in 1992 to leaning left in the 2016 election. Similarily, Nevada changed from left leaning to right while New Mexico changed from right to left. Oregon, Washington, and finally Wymoning leans right. By looking at each individual state’s party vote percentages across districts for each year we are able to determine which way the state leans partisan wise and then which way the region as a whole tends to lean.</p>
+<p>Additionally we can compare the amount of districts for each state for the election year 1992 and election year 2016 to see if there were any changes. Our variables that we are researching for each year may contribute to changes and partisan shifts. In the year 1990 the district totals for each state were as follows: California has 52 districts, Washington has 9, Arizona has 6, Colorado has 6, Oregon has 5, New Mexico has 3, Utah has 3, Idaho has 2, and Nevada has 2. In 2015 the district totals for each state were as follows. California increased their total by 1 resulting in 53 districts. Washington also increased by 1 resulting in 10 districts. Arizona added 3 more for a total of 9 districts. Colorado added 1 district reaching a total of 7. Oregon experienced no changes in amount of districts remianing at a total of 5. Additionally, New Mexico remained at 3 districts with no amount changes. Utah added one district totaling 4. Idaho remained the same with a total of 2. Finally Nevada added 2 districts totaling 4. Wymoning has one at-large congressional district.</p>
+</div>
+<div id="descriptive-analysis-3" class="section level2">
+<h2><span class="header-section-number">5.2</span> Descriptive analysis</h2>
+<div id="percent-not-white-non-hispanic-5" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Percent not White, non-Hispanic</h3>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
+<p>In this graph we can find the percentage of non-white and non-Hispanic people in the years of 1990 and 2015 in the western region of the United States. In the graph of the year 1990, the average is in 30 percentage. In states like Washington, Utah, Oregon and Colorado, the non-white non-Hispanic population is between 5% and 20%. In the case of the New Mexico state, the percentage of population is around 40% or 45%. We can say that all these states have a tendency to stay in the same growth trend. The California states has around 90% of population nonwhite and non Hispanic. This shows a continuous growth trend for the future. The washigton state has a mesokurtic distribution because is neither high nor low, rather it is considered to be a baseline for the two other classifications. Utah, Oregon and New Mexico have a leptokurtic distribution. The Colorado State has a bimodal peak. Finally, we can say that California and Arizona have a Platykurtic distributions. On the other hand, In the graph of the year 2015, the average is in 40 percentage. We can see that states like Utah, Oregon and New Mexico maintain their trend since 1990. In the case of the state of Nevada (which data was not presented in the year 1990). shows one of the highest values of percentage of people not white and not hispanic, like the state of California. This growth trend may be due to the growth of the non-white or non-Hispanic population or to the decrease in the white and Hispanic population. talking about kurtosis, the Washington state has two peaks and the California states has a Platykurtic distribution.</p>
+<pre><code>## Reading layer `districts_all&#39; from data source `https://github.com/jshannon75/geog4300/raw/master/Labs/Final_assignment/districts_all.geojson&#39; using driver `GeoJSON&#39;
+## Simple feature collection with 877 features and 2 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -179.1489 ymin: -14.5487 xmax: 179.7785 ymax: 71.36516
+## epsg (SRID):    4326
+## proj4string:    +proj=longlat +datum=WGS84 +no_defs</code></pre>
+<pre><code>## Reading layer `USstates_48&#39; from data source `https://github.com/jshannon75/geog4300/raw/master/Labs/Final_assignment/USstates_48.geojson&#39; using driver `GeoJSON&#39;
+## Simple feature collection with 48 features and 8 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -124.7328 ymin: 24.95638 xmax: -66.96927 ymax: 49.37173
+## epsg (SRID):    4326
+## proj4string:    +proj=longlat +datum=WGS84 +no_defs</code></pre>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-46-1.png" width="672" /></p>
+<p>The entire Western region has also been strongly influenced by European, Hispanic or Latino, Asian and Native Americans; it contains the largest number of minorities in the U.S. The West also contains much of the Native American population in the U.S., particularly in the large reservations in the Mountain and Desert States.These graphs shows the distribution by districts of the non-white and non-Hispanic population in the western territory of the United States, during the years 1990 and 2015. The map of the year 1990 indicates that there was a greater presence of non-white population and non-Hispanic in the state of New Mexico. However, in one of its districts in the center of this state shows a lower presence of this population. In some districts of southern Arizona and central California there is a high percentage of non-Hispanic non-white population. In the north of the West region, there is a low percentage of non-Hispanic non-white population. The population distribution by race in the Western United States (2010): 66.4% Non-Hispanic Whites, 28.6% were Hispanic or Latino (of any race), 9.3% Asian, 4.8% Black or African American, 1.9% American Indian or Alaska Native and 12.4% Some other race. In 2015 graphic, we can see that the concentration of the population has decreased but it has expanded throughout the territory. In the state of Arizona, a greater concentration of population can be observed in the south of this state. Likewise, the concentration of population has expanded in the central part of the state of California. The population has expanded to the state of Nevada and Colorado. Nevertheless, there are some states where this population don’t have incremented such as for instance Montana, Wyoming, Idaho and Oregon. We can conclude that the population has expanded significantly over the years.</p>
+</div>
+<div id="median-household-income-6" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Median household income</h3>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-47-1.png" width="672" /></p>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-49-1.png" width="672" /></p>
+<p>Ridge plot analysis of the median household income variable in 1990 compared to 2015:</p>
+<p>According to the ridge plots produced above we can see that in 1990 the mean of median household income of the West Region was around 60,000 dollars. To the right of the median line (or incomes exceeding the median amount) you will notice that there are a few states that peak between the 60,000 and 75,000 dollar range and those data are shown to be more platykurtic and mesokurtic.These states are California, Colorado, and Washington. There are few states that extend beyond the 75,000 dollar mark California being one that trickles over and just grazes the 100,000 dollar line. The most prominent peaks of the ridegelines fall to the left of the median household income line, or people that make less than the mean median income. New Mexico, Utah, and Washington are the most significant with New Mexico’s population peaking around 35,000, Utah’s around 35,00 and Washington around 55,000, just under the median income line. Interestingly in the 2015 ridgeline plot, the average median household income is about the same hovering around 60,000, but the distribution amongst the states differs from what we saw in the 1990 data. We can also describe these data distributions more specifically with the terms platykurtic, mesokurtic and leptokurtic. For example when we look at the data in 2015 for the average median household income for New Mexico, they are very leptokurtic or thin on the ridgeline plot. For the 2015 ridgeline plots the range of incomes is greater than the 1990.</p>
+<p>By comparing the two we can see some prevalent shifts. For example, the amount of wealthier districts in the state of California decreased from 1990 to 2015. There was also a meadian household income shift in New Mexico from about 37,000 in 1990 to 41,000 in 2015. Colorado is another state that is interesting to compare from 1990 to 2015. In 1990 Colorado’s mean median household income fell below the average at around 40,000 whereas in 2015 it increased to exceeding the average at around 65,000. As a whole, we can see that there is more variation of income in the 2015 ridge plot. This seems to be consistent with the spatial representation in the tmaps.</p>
+<p>Tmap analysis of the medhhinc variable from 1990 to 2015:</p>
+<p>The tmaps above provide the data of household income spatially. You can see a distinct shift from 1990 to 2015 in the states of Colorado and Utah for example. In the 1990 map, Colorado appears to predominantly be the lightest shade signifying that the medhhinc range fell between 35,278 and 46,214 whereas in the 2015 map there are no districts in the state that remain that shade. Instead, about half the state shifts to bein a full shade darker with a range of 45,115 and 52,457 for the medhhinc variable. The other half the state is an even darker orange with a range that shifted to 61,296 and 70,534. Utah is really interesting because not only did the medhhinc increase statewide, but the districts flipped flopped in regard to frequency of wealthier incomes. In 1990 the west part of the state had significantly higher median household incomes, but in 2015 the east side of the state drastcially increased to surpass the west side’s 1990 medhhinc. By looking at the maps as whole it is evident that median household income on average increased across the entire region with few exceptions remaining in the same category. The western sliver of Idaho and the bulk of eastern Oregon are examples of these spots. Again, in the tmaps we are able to see the increase in variation of incomes from 1990 to 2015 for the whole of the West Region.</p>
+</div>
+<div id="percent-with-a-bachelors-degree-6" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> Percent with a bachelor’s degree</h3>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
+<p>The following states were not included in the ridge plot for both 1990 and 2015: Wyoming, Montana, Idaho, Hawaii, and Alaska. Additionally, Nevada was not graphed in 1990 but rather appears in 2015. I believe this was because these are the locations for which there was less than three congressional districts by which to compare, and hence we did not have a distribution to plot.</p>
+<p>Otherwise, the width of the distribution for all of the ridge plots increased between 1990 and 2015, which suggests that there is more variance as to the percentage of people with Bachelor’s degrees across the West U.S. Census Region. This shift is also reflected in how the average across the region increased. Additionally, the peaks of the ridges shifted to the right, also reflecting a general increase in the average level of educational attainment.</p>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-52-1.png" width="672" /></p>
+<p>The spatial distribution for the attainment of the Bachelor’s degrees shows a general increase across the region (which is also in the increase of the legend’s percentage brackets based upon quantile intervals), but it also appears to have hotspots which reflect areas of possible higher population, but even more so, areas where there are higher education. These key areas include major cities within states and the coastline, such as with Califoria. Also, there appears to be a lower percentage in areas with depleated populations.</p>
+</div>
+</div>
+<div id="models-3" class="section level2">
+<h2><span class="header-section-number">5.3</span> Models</h2>
+<p>(Include models for both years and scatterplots/fit lines. Interpret the coefficients and measures of model strength, focusing on direction, magnitude, and significance. Also look at the model residuals using density plots and maps as shown in the assignment.)</p>
+<div id="percent-not-white-non-hispanic-6" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Percent not White, non-Hispanic</h3>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+nonwht
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+nonwht_pct
+</td>
+<td>
+0.230<sup>***</sup>
+</td>
+<td>
+0.352<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.059)
+</td>
+<td>
+(0.052)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+44.627<sup>***</sup>
+</td>
+<td>
+38.250<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(2.184)
+</td>
+<td>
+(2.727)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+90
+</td>
+<td>
+99
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.146
+</td>
+<td>
+0.319
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.136
+</td>
+<td>
+0.312
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+13.178 (df = 88)
+</td>
+<td>
+12.954 (df = 97)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+15.047<sup>***</sup> (df = 1; 88)
+</td>
+<td>
+45.515<sup>***</sup> (df = 1; 97)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-55-1.png" width="672" /></p>
+<p>We will consider the relationship between non-white and non-Hispanic population and the democratic vote, during the years 1990 and 2015. The first and second columns of this data contain the population nonwhite and non-Hispanic and democratic votes. Let X denote total democratic votes and Y denote the population. In the graph of the year 1990 as the number of Democratic votes increases, the number of the population increases. In this same sense, for the year 2015 we see a similar scenario. In this graph, it can be seen that as the number of Democratic votes increases, the non-white and non-Hispanic population increase too, but it should be noted that it does increase significantly. No doubt this is because for the 2015 the non-white and non-mestizo population increased. Of course, we have to understand that the number of samples (population nonwhite-nonHispanic in 2015 is greater than 1990. Direction: Both, in the year 1990 and in the year 2015 the direction of the variable non-white and non-Hispanic population is positive. Which means an population increment. Significance: There is an important significance between 1990 and 2015, as we can see between its values (0.230 *** 0.352 ***) the difference goes between 0.122%. Another value that indicates an important significance is the p-value for the year 1990 is &lt;0.1 and for the year 2015 it is &lt;0.05. Magnitude: We can observe that for the year 1990 the population is dispersed, however there is a tendency of the points to be close to the line (average). For the year 2015, the population shows the same dynamics of the year 1900 although a little more dispersed.</p>
+</div>
+<div id="median-household-income-7" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Median household income</h3>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Pct. voting democratic
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+medhhinc
+</td>
+<td>
+-0.0002<sup>*</sup>
+</td>
+<td>
+0.0001
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.0001)
+</td>
+<td>
+(0.0001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+61.049<sup>***</sup>
+</td>
+<td>
+47.115<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(5.901)
+</td>
+<td>
+(5.901)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+90
+</td>
+<td>
+99
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.033
+</td>
+<td>
+0.017
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.022
+</td>
+<td>
+0.007
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+14.024 (df = 88)
+</td>
+<td>
+15.570 (df = 97)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+2.995<sup>*</sup> (df = 1; 88)
+</td>
+<td>
+1.647 (df = 1; 97)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-58-1.png" width="672" /></p>
+<p>Regression models analysis:</p>
+<p>Magnitude: As income increases by 10,000 in 1992, democratic vote goes down 2%, conversely in 2016 as the income increases, the democratic vote also increased.</p>
+<p>Direction: For the year 1990 the direction is negative, for 2015 the direction is positive</p>
+<p>Significance: For the 1992 model the medhhinc variable does have significance however it is not significant in the 2016 model.</p>
+<p>Scatterplot analysis:</p>
+<p>Magnitude: Like we saw in the 1992 regression model the 1990 scatterplot visually demonstrates the negative slope, showing that as our incomes increase, the democratic vote decreases. Likewise with our 2016 model, the 2015 scatterplot demonstrates that as our income increases the democratic vote also increases.</p>
+<p>Direction:1990 has a negative direction, 2015 has a positive direction</p>
+<p>Significance: In the 1990 scatterplot, there is a general directional trend of plots that supports the marginal significance of the medhinc variable we witnessed in the regression model, however in the 2015 scatterplot the plots are pretty dispersed indicating that there is not significance.</p>
+</div>
+<div id="percent-with-a-bachelors-degree-7" class="section level3">
+<h3><span class="header-section-number">5.3.3</span> Percent with a bachelor’s degree</h3>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Pct. voting democratic
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+badeg_pct
+</td>
+<td>
+-0.048
+</td>
+<td>
+0.211<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.176)
+</td>
+<td>
+(0.119)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+52.081<sup>***</sup>
+</td>
+<td>
+48.494<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(3.717)
+</td>
+<td>
+(3.665)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+90
+</td>
+<td>
+99
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.001
+</td>
+<td>
+0.032
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+-0.011
+</td>
+<td>
+0.022
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+14.255 (df = 88)
+</td>
+<td>
+15.451 (df = 97)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+0.073 (df = 1; 88)
+</td>
+<td>
+3.182<sup>*</sup> (df = 1; 97)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-61-1.png" width="672" /></p>
+<p>In 1992, the percentage of people with Bachelor’s degrees as it impacts the percentage of people voting democratically has an r2 value of 0.001 (p &gt; 0.1), which suggests that the statistical relationship observed is negligable (it is not sigificant). This is also supported by the F Statistic, in that it was insigificant, and therefore did not matter to the model that the percentage of people with Bachelor’s degrees was unimportant to how people voted democratically.</p>
+<p>However, in the 2016 election, there was some significance observed and between the percentage of people with Bachelor’s degrees and how they voted democratically. The relationship was positive (meaning that as the percentage of people with Bachelor’s degrees increased then the number of people who voted democratically also increased). The magnitude of the relationship, albeit still small (coefficient = 0.211) was deemed to be sigificant (0.5 &lt; p &lt; 0.1). Also, the F statistic was sigificant (0.5 &lt; p &lt; 0.1), meaning that it did make a sigificant difference to the model that the percent of people with Bachelor’s degrees trended with the percentage of people who voted democratically.</p>
+<p>Both of these models are depicted in the scatter plots above.</p>
+</div>
+<div id="multivariate-models-3" class="section level3">
+<h3><span class="header-section-number">5.3.4</span> Multivariate models</h3>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Pct. voting democratic
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+badeg_pct
+</td>
+<td>
+0.667<sup>***</sup>
+</td>
+<td>
+0.712<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.228)
+</td>
+<td>
+(0.149)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+medhhinc
+</td>
+<td>
+-0.0004<sup>***</sup>
+</td>
+<td>
+-0.0002<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.0001)
+</td>
+<td>
+(0.0001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+nonwht_pct
+</td>
+<td>
+0.281<sup>***</sup>
+</td>
+<td>
+0.455<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.060)
+</td>
+<td>
+(0.049)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+52.810<sup>***</sup>
+</td>
+<td>
+26.376<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(5.695)
+</td>
+<td>
+(5.127)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+90
+</td>
+<td>
+99
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.242
+</td>
+<td>
+0.490
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.216
+</td>
+<td>
+0.474
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+12.557 (df = 86)
+</td>
+<td>
+11.326 (df = 95)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+9.164<sup>***</sup> (df = 3; 86)
+</td>
+<td>
+30.474<sup>***</sup> (df = 3; 95)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-63-1.png" width="672" /><img src="sample_book_files/figure-html/unnamed-chunk-63-2.png" width="672" /><img src="sample_book_files/figure-html/unnamed-chunk-63-3.png" width="672" /></p>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  districts_1990$residuals
+## W = 0.98715, p-value = 0.525</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  districts_2015$residuals
+## W = 0.9945, p-value = 0.9614</code></pre>
+<pre><code>## 
+##  studentized Breusch-Pagan test
+## 
+## data:  model1990
+## BP = 5.3773, df = 3, p-value = 0.1462</code></pre>
+<pre><code>## 
+##  studentized Breusch-Pagan test
+## 
+## data:  model2015
+## BP = 1.2026, df = 3, p-value = 0.7524</code></pre>
+<pre><code>##  badeg_pct   medhhinc nonwht_pct 
+##   2.161737   1.967426   1.143225</code></pre>
+<pre><code>##  badeg_pct   medhhinc nonwht_pct 
+##   2.941821   2.678538   1.163644</code></pre>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-63-4.png" width="672" /><img src="sample_book_files/figure-html/unnamed-chunk-63-5.png" width="672" /><img src="sample_book_files/figure-html/unnamed-chunk-63-6.png" width="672" /> Interpretation of models:</p>
+<p>When we look at the models as a whole we can determine that overall all of our variables (the non white percentage, the median household income, and the percent with a bachelor’s degree) are significant and that our F statistics are high indicating that the inclusion of all of the variables is important. We can also see that our data is normal.</p>
+<p>1992 Regression Model: The direction of the regression model for the badeg_pct and the nonwht_pct variables are both positive, however for the medhhinc variable it is actually negative. The significance of each variable in the 1992 model is significant. The coefficients for the badeg_pct and the nonwht_pct are higher than the medhhinc however because the medhhinc’s coefficient translates to 10% of 10,000 dollars of household incomes, which is a significant amount, we can conclude that the magnitude of all of the variables is high.</p>
+<p>2016 Regression Model: Similarily to the 1992 model, the direction of the badeg_pct and the nonwht_pct variables are positive while the medhhinc variable is negative. Again, like in our 1992 model the significance of all of our variables are significant. Looking at our coefficients for each variable we can also determine that the magnitude in this model for each is high.</p>
+<p>Significant problems: We do have a few outliers evident. Spatially we can see that the outliers appear to be along the coast. With regard to heterosketasticity we fail to reject the null hypotheses because we do not have heterosketasticity evident based on our bptest. We also do not have multicolinearity in our viff test because each variable for each year is less than 4.</p>
+</div>
+</div>
+<div id="summary-3" class="section level2">
+<h2><span class="header-section-number">5.4</span> Summary</h2>
+<p>There are many similarities between percent of non white and non hispanic population and Percent with a bachelor’s degree and Median household income. For example in New Mexico and Arizona, both in 1990 and 2015 years the states which have a high non white non hispanic population have a low percent bachelor’s degree. On the other hand, the median household income is very related with the non white and non hispanic population because in states where there are low incomes (such as New Mexico) where there is a high Percent not White, non-Hispanic population. We can conclude that poverty goes hand in hand with the low level of education and that it is usually present in states where the white population (mainly) and the Hispanic population is low, maybe related to other demographic categories.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="midwest.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="concluding-thoughts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

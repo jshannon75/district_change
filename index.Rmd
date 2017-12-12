@@ -1,6 +1,6 @@
 --- 
-title: "Geog4/6300 Final Project"
-author: "A bunch of geographers"
+title: "A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016"
+author: "Students in UGA's Introduction to Spatial Analysis class in Fall 2017"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -8,14 +8,26 @@ documentclass: book
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "This is our final projects looking at the demographics of voting in U.S. Census regions."
 ---
 
-# Prerequisites
+#Background
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+##Overview
+Recent interest in election results, shifting party affiliations, and gerrymandering have all fueled national conversations on the geography of voting. In this research project, students in UGA's Introduction to Spatial Analysis joined in this conversation by conducting an analysis of regional voting trends at the district level and their association with changing demographic patterns. Our primary question was the association of race, household income, and education with partisan voting patterns (more specifically, percent voting Demogratic). We also looked at historical trends by running our analysis for two election cycles: 1992 and 2016. Through our analysis, we hoped to better identify the link between these demographic predictors and historical voting patterns.
 
-For now, you have to install the development versions of **bookdown** from Github:
+##Data
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+###Voting
+We manually digitized voting data in the 1992 and 2016 elections for the U.S. House based on [official voting records](http://history.house.gov/Institution/Election-Statistics/Election-Statistics). We used percentage voting Democratic as our outcome variable, although percentage voting Republican would work equally as well. Some races were uncontested, and for these we adopted the values used in recent research on the efficiency gap:  66% of the vote if the seat was won by a Democrat and 36% if won by a Republican (Stephanopoulos and McGhee, 2015, p. 867).
+
+###Demographics
+District boundaries were downloaded from the National Historical Geographic Information System database for 1992 and 2016 (Manson, et al. 2017). Not all data was available at voting precinct level in 1992, and so we used the mean values of tract level data to create our variables of interest in both years: % not classified as white, non-Hispanic, % with a Bachelor's degree or higher, and median household income. These values were based on the 1990 decennial census and 2011-2015 American Community Survey (the most recent at the time of analysis).
+
+##Analysis
+Each group was assigned one of four census regions. Within each region, group members each did a descriptive analysis of each independent variable individually along with a simple univariate OLS regression. As a group, we also created a multivariate OLS model with all independent variables, evaluating the model results and checking for heteroskedasticity, multicollinearity, and problems related to model residuals. The results of this analysis are summarized in the sections below.
+
+##References
+Manson, S., Schroeder, J., Van Riper, D., and Ruggles, S. IPUMS National Historical Geographic Information System: Version 12.0 [Database]. Minneapolis: University of Minnesota. 2017. http://doi.org/10.18128/D050.V12.0
+
+Stephanopoulos, N. O., & McGhee, E. M. (2015). Partisan gerrymandering and the efficiency gap. University of Chicago Law Review, 82(2), 831–900.
 

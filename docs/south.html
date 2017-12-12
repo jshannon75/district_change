@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016</title>
+  <meta name="description" content="A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016">
+  <meta name="generator" content="bookdown 0.5.4 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016" />
+  
+  
+  
+
+<meta name="author" content="Students in UGA’s Introduction to Spatial Analysis class in Fall 2017">
+
+
+<meta name="date" content="2017-12-12">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="northeast.html">
+<link rel="next" href="midwest.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>1.1</b> Overview</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i><b>1.2</b> Data</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#voting"><i class="fa fa-check"></i><b>1.2.1</b> Voting</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#demographics"><i class="fa fa-check"></i><b>1.2.2</b> Demographics</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#analysis"><i class="fa fa-check"></i><b>1.3</b> Analysis</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#references"><i class="fa fa-check"></i><b>1.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="northeast.html"><a href="northeast.html"><i class="fa fa-check"></i><b>2</b> Northeast</a><ul>
+<li class="chapter" data-level="2.1" data-path="northeast.html"><a href="northeast.html#overview-1"><i class="fa fa-check"></i><b>2.1</b> Overview</a></li>
+<li class="chapter" data-level="2.2" data-path="northeast.html"><a href="northeast.html#descriptive-analysis"><i class="fa fa-check"></i><b>2.2</b> Descriptive Analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="northeast.html"><a href="northeast.html#percent-not-white-non-hispanic"><i class="fa fa-check"></i><b>2.2.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="2.2.2" data-path="northeast.html"><a href="northeast.html#median-household-income"><i class="fa fa-check"></i><b>2.2.2</b> Median Household Income</a></li>
+<li class="chapter" data-level="2.2.3" data-path="northeast.html"><a href="northeast.html#percent-with-a-bachelors-degree"><i class="fa fa-check"></i><b>2.2.3</b> Percent with a Bachelor’s Degree</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="northeast.html"><a href="northeast.html#models"><i class="fa fa-check"></i><b>2.3</b> Models</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="northeast.html"><a href="northeast.html#percent-not-white-non-hispanic-1"><i class="fa fa-check"></i><b>2.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="2.3.2" data-path="northeast.html"><a href="northeast.html#median-household-income-1"><i class="fa fa-check"></i><b>2.3.2</b> Median Household Income</a></li>
+<li class="chapter" data-level="2.3.3" data-path="northeast.html"><a href="northeast.html#percent-with-a-bachelors-degree-1"><i class="fa fa-check"></i><b>2.3.3</b> Percent with a Bachelor’s Degree</a></li>
+<li class="chapter" data-level="2.3.4" data-path="northeast.html"><a href="northeast.html#multivariate-models"><i class="fa fa-check"></i><b>2.3.4</b> Multivariate Models</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="northeast.html"><a href="northeast.html#summary"><i class="fa fa-check"></i><b>2.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="south.html"><a href="south.html"><i class="fa fa-check"></i><b>3</b> South</a><ul>
+<li class="chapter" data-level="3.1" data-path="south.html"><a href="south.html#overview-2"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="south.html"><a href="south.html#descriptive-analysis-1"><i class="fa fa-check"></i><b>3.2</b> Descriptive analysis</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="south.html"><a href="south.html#percent-not-white"><i class="fa fa-check"></i><b>3.2.1</b> Percent not White</a></li>
+<li class="chapter" data-level="3.2.2" data-path="south.html"><a href="south.html#median-household-income-2"><i class="fa fa-check"></i><b>3.2.2</b> Median household income</a></li>
+<li class="chapter" data-level="3.2.3" data-path="south.html"><a href="south.html#percent-with-a-bachelors-degree-2"><i class="fa fa-check"></i><b>3.2.3</b> Percent with a bachelor’s degree</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="south.html"><a href="south.html#models-1"><i class="fa fa-check"></i><b>3.3</b> Models</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="south.html"><a href="south.html#percent-not-white-non-hispanic-2"><i class="fa fa-check"></i><b>3.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="3.3.2" data-path="south.html"><a href="south.html#median-household-income-3"><i class="fa fa-check"></i><b>3.3.2</b> Median household income</a></li>
+<li class="chapter" data-level="3.3.3" data-path="south.html"><a href="south.html#percent-with-a-bachelors-degree-3"><i class="fa fa-check"></i><b>3.3.3</b> Percent with a bachelor’s degree</a></li>
+<li class="chapter" data-level="3.3.4" data-path="south.html"><a href="south.html#multivariate-models-1"><i class="fa fa-check"></i><b>3.3.4</b> Multivariate models</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="south.html"><a href="south.html#summary-1"><i class="fa fa-check"></i><b>3.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="midwest.html"><a href="midwest.html"><i class="fa fa-check"></i><b>4</b> Midwest</a><ul>
+<li class="chapter" data-level="4.1" data-path="midwest.html"><a href="midwest.html#overview-3"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
+<li class="chapter" data-level="4.2" data-path="midwest.html"><a href="midwest.html#descriptive-analysis-2"><i class="fa fa-check"></i><b>4.2</b> Descriptive analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="midwest.html"><a href="midwest.html#percent-not-white-non-hispanic-3"><i class="fa fa-check"></i><b>4.2.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="4.2.2" data-path="midwest.html"><a href="midwest.html#median-household-income-4"><i class="fa fa-check"></i><b>4.2.2</b> Median household income</a></li>
+<li class="chapter" data-level="4.2.3" data-path="midwest.html"><a href="midwest.html#percent-with-a-bachelors-degree-4"><i class="fa fa-check"></i><b>4.2.3</b> Percent with a bachelor’s degree</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="midwest.html"><a href="midwest.html#models-2"><i class="fa fa-check"></i><b>4.3</b> Models</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="midwest.html"><a href="midwest.html#percent-not-white-non-hispanic-4"><i class="fa fa-check"></i><b>4.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="4.3.2" data-path="midwest.html"><a href="midwest.html#median-household-income-5"><i class="fa fa-check"></i><b>4.3.2</b> Median household income</a></li>
+<li class="chapter" data-level="4.3.3" data-path="midwest.html"><a href="midwest.html#percent-with-a-bachelors-degree-5"><i class="fa fa-check"></i><b>4.3.3</b> Percent with a bachelor’s degree</a></li>
+<li class="chapter" data-level="4.3.4" data-path="midwest.html"><a href="midwest.html#multivariate-models-2"><i class="fa fa-check"></i><b>4.3.4</b> Multivariate models</a></li>
+<li class="chapter" data-level="4.3.5" data-path="midwest.html"><a href="midwest.html#residual-analysis"><i class="fa fa-check"></i><b>4.3.5</b> Residual Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="midwest.html"><a href="midwest.html#summary-2"><i class="fa fa-check"></i><b>4.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="west.html"><a href="west.html"><i class="fa fa-check"></i><b>5</b> West</a><ul>
+<li class="chapter" data-level="5.1" data-path="west.html"><a href="west.html#overview-4"><i class="fa fa-check"></i><b>5.1</b> Overview</a></li>
+<li class="chapter" data-level="5.2" data-path="west.html"><a href="west.html#descriptive-analysis-3"><i class="fa fa-check"></i><b>5.2</b> Descriptive analysis</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="west.html"><a href="west.html#percent-not-white-non-hispanic-5"><i class="fa fa-check"></i><b>5.2.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="5.2.2" data-path="west.html"><a href="west.html#median-household-income-6"><i class="fa fa-check"></i><b>5.2.2</b> Median household income</a></li>
+<li class="chapter" data-level="5.2.3" data-path="west.html"><a href="west.html#percent-with-a-bachelors-degree-6"><i class="fa fa-check"></i><b>5.2.3</b> Percent with a bachelor’s degree</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="west.html"><a href="west.html#models-3"><i class="fa fa-check"></i><b>5.3</b> Models</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="west.html"><a href="west.html#percent-not-white-non-hispanic-6"><i class="fa fa-check"></i><b>5.3.1</b> Percent not White, non-Hispanic</a></li>
+<li class="chapter" data-level="5.3.2" data-path="west.html"><a href="west.html#median-household-income-7"><i class="fa fa-check"></i><b>5.3.2</b> Median household income</a></li>
+<li class="chapter" data-level="5.3.3" data-path="west.html"><a href="west.html#percent-with-a-bachelors-degree-7"><i class="fa fa-check"></i><b>5.3.3</b> Percent with a bachelor’s degree</a></li>
+<li class="chapter" data-level="5.3.4" data-path="west.html"><a href="west.html#multivariate-models-3"><i class="fa fa-check"></i><b>5.3.4</b> Multivariate models</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="west.html"><a href="west.html#summary-3"><i class="fa fa-check"></i><b>5.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html"><i class="fa fa-check"></i><b>6</b> Concluding thoughts</a><ul>
+<li class="chapter" data-level="6.1" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#trends-in-regional-models"><i class="fa fa-check"></i><b>6.1</b> Trends in regional models</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#comparison-to-national-models"><i class="fa fa-check"></i><b>6.1.1</b> Comparison to national models</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#limitations"><i class="fa fa-check"></i><b>6.2</b> Limitations</a></li>
+<li class="chapter" data-level="6.3" data-path="concluding-thoughts.html"><a href="concluding-thoughts.html#final-thoughts"><i class="fa fa-check"></i><b>6.3</b> Final thoughts</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Racialized Electorate: Changing demographic predictors of voting behavior in 1992 and 2016</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="south" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> South</h1>
+<div id="overview-2" class="section level2">
+<h2><span class="header-section-number">3.1</span> Overview</h2>
+<p>The U.S. Census Bureau defines the “South Region” as including the following sixteen states: Alabama, Arkansas, Delaware, Florida, Georgia, Kentucky, Louisiana, Maryland, Mississippi, North Carolina, Oklahoma, South Carolina, Tennessee, Texas, Virginia, and West Virginia. This project investigates voting tendencies of U.S. citizens living within congressional voting districts of the South Region in the elections of 1992 and 2016. Voting districts are represented by one member of the U.S. House of Representatives. The number of voting districts in each state is determined through the “apportionment” process. This process divides the total 435 seats of the U.S. House of Representatives between states based on the proportion of the general population each state contains (as defined by the decennial census report). Therefore, a state’s population (and changes in population) directly influences the number of districts (and House Representatives) the state be assigned. Between the elections of 1992 and 2016 a major party shift occurred in the South Region, swinging the majority of voters from Democratic to Republican.</p>
+<p>The South Region contained 145 congressional districts in 1992. These districts were split between states as follows: Alabama (7), Arkansas (4), Delaware (1), Florida (22), Georgia (11), Kentucky (6), Louisiana (3), Maryland (8), Mississippi (5), North Carolina (12), Oklahoma (6), South Carolina (6), Tennessee (9), Texas (30), Virginia (11), and West Virginia (3).The population of the South region increased between the 1990 and 2015 census. As of 2015, the region’s total number of congressional districts had increased by 15 to 160. States that increased in number of districts were: Florida (+4), Georgia (+3), Louisiana (+3), North Carolina (+1), South Carolina (+1), and Texas (+6). Only Mississippi and Oklahoma decreased in number of congressional districts (-1 and -2, respectively). All other states in the South Region did not change.</p>
+<p>During the 1992 election, the mean percentage of citizens in the South Region who voted Democrat was 53.84% (IQR=23.38). This shows that voters of the South Region, in general were more likely to vote Democrat than Republican in 1992. The distributions of the percentage of population voting Democrat by State were fairly platykurtic and some even bimodal. This shows that in 1992 there was variation in how districts would vote inside of individual states (some districts leaning Democrat, some GOP). Still, 86 of the 145 districts had a mean percentage of Democratic voters greater than 50 %. There was not a stark geographic pattern to the voting habits of citizens in 1992.</p>
+<p>The mean percentage of the South Region’s citizens who voted Democrat in the 2016 election had decreased by more than 13% to 40.43% (IQR=30.1275). This displays that, today, voters in the South Region are highly likely to vote Republican. In 2016, only 47 of the 160 voting districts had a mean percentage of Democratic voters greater than 50 %. The distributions of the districts’ Democratic percentage, by state, had shifted to the left (decreased) and become more leptokurtic (less variance around the state mean). A geographic pattern also begins to emerge, based on the 2016 election. Rural districts are far more likely to vote Republican than Democrat, while districts containing mostly Urban areas lean toward Democrats.</p>
+</div>
+<div id="descriptive-analysis-1" class="section level2">
+<h2><span class="header-section-number">3.2</span> Descriptive analysis</h2>
+<div id="percent-not-white" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Percent not White</h3>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-2-1.png" width="672" /> The ridgeplot above displays the distributions of the percentages of the population who identified as “non-White”, by state, in both the 1990 and 2015 census. The red line represents the regional mean for each year, while blue represents the 50 percent line.</p>
+<p>The 1990 ridgeplot displays that the majority of districts in the South Region had a non-White population less than that of the year’s regional mean (26.65% in 1990). It also shows that the majority of the regions population identified as “White, non-Hispanic”. The data show that in 1990, The majority of districts in each state had a majority White population, but that only 15.86 % of districts (23 of 145) had majority non-White populations.</p>
+<p>The 2015 ridgeplot shows the increase in mean non-White population (to 38.88% in 2015), as most state histograms shifted to the right. Even more interesting is the fact that there are more districts with majority non-White populations. This number increased to 38 of 160 (23.75%) districts.</p>
+<p>In both census years, Whites are the majority race in the South Region. The data show that the non-White population in the South Region increased by more than 10 percent (26.65% in 1990 to 38.88% in 2015) between 1990 and 2015. All states show positive skew, showing that all states contain certain districts with a much higher percentage of non-White populations.</p>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>The above maps show the spatial distribution of non-White population percentage in the South Region. Some geographic patterns stand out in these maps. The influence of change in both African-American and Hispanic populations are visible in these maps. Areas of high non-White population are visible in Southern Texas, and areas of South Florida. Areas of high non-White population are also visible across districts of the “Cotton belt”. From 1990 to 2015, non-White population percentages increased in most of the South districts, but a major increase can be seen in South Florida. The districts on the Western side of South Florida increased from having low non-White populations (&lt;30%) to high (&gt;70%). The only areas of the South Region where we don’t see much change is in Arkansas, Western Tennessee, Kentucky, and the mountainous regions of Appalachia.</p>
+</div>
+<div id="median-household-income-2" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Median household income</h3>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>The ridge plot shows that the mean of the median household income variable, indicated by the red line on each plot, did not change much between 1990 and 2015 in the South region, consistently staying just below $50,000. While the mean for median household income increased across the region in 2015, the distributions of household income between districts in each state stayed primarily less than $50,000, with more states appearing to have more of a bell curve shape in the ridge plots.</p>
+<p>In 1990, the voting districts of West Virginia, Tennessee, South Carolina, Oklahoma, North Carolina, Mississippi, Louisiana, Arkansas, and Alabama have a smaller distribution of median household income that are primarily below the mean of $44,897.65. This indicates that there is less variation in median household income between districts, so wealth may not be a primary factor in the creation of district boundaries. For the rest of the region, there is a larger discrepancy between the median household incomes that illustrates a noticeable difference in the wealth of voting districts. The most extreme examples are Virginia and Maryland, where the median household incomes range from below $50,000 to almost $100,000 across districts.</p>
+<p>In 2015, there were not any drastic changes amongst the voting districts, only a minor increase in the mean of state median houshold incomes at $47,727.17. Overall, the median household income was higher for most states with the exception of Mississippi, Kentucky, Florida, Arkansas and Alabama. Once again, Virginia and Maryland remained outliers with larger discrepancies in median household income across voting districts. Virginia has a larger distribution of median household incomes than in 1990, but Maryland experienced a slight decrease in the range of median household income between districts.</p>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Natural break intervals were used for the maps to illustrate the small differences between 1990 and 2015 for median household income. The natural breaks show the slight variation in the overall pattern of median household incomes, confirming the slight increase in the mean and overall distribution amongst voting districts observed in the ridgeplots. In 2015, the 11 of the 16 states in the South region had a median between $40,000 and $50,000, resulting in the mean of $47,727.17. The 2015 map shows some of these changes through the change in the natural breaks, with an increase in the intervals between $40,000 and $50,000. The 1990 and 2015 maps both indicate that median household income is higher in urban areas than in rural areas, particularly around Houston, Atlanta, and the area surrounding Washington D.C.</p>
+</div>
+<div id="percent-with-a-bachelors-degree-2" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Percent with a bachelor’s degree</h3>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Every state in the South Region experienced a rise in its median percentage of people with a bachelor’s degree from 1990 to 2015. The median percentage of the South Region overall increased from 11.6% to 20.4%. On the ridgeplots for both 1990 and 2015 we can see that the mean (red line) is ahead of the median (blue line) indicating there are some positive outliers contributing to positive skewness. States in 2015 exhibit slightly more variability (IQR = 11.6) in bachelor’s degree percentage than in 1990 (IQR = 7.6). In 1990, the states of Virginia, Texas, Maryland, North Carolina, and Georgia have some strong positive outliers while the other states stay closer to the median. In 2015, there is more variation. Looking at the map, it is clear that districts near or in urban areas have higher rates of bachelor’s degrees. The metropolises of Atlanta, Dallas, Washington D.C., and others, are evident due to their high rates in 1990 and 2015 relative to surrounding districts. Bachelor’s degree percentages in the districts of 2015 are higher than in the districts of 1990.</p>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+</div>
+<div id="models-1" class="section level2">
+<h2><span class="header-section-number">3.3</span> Models</h2>
+<div id="percent-not-white-non-hispanic-2" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Percent not White, non-Hispanic</h3>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+pct
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+nonwht_pct
+</td>
+<td>
+0.223<sup>***</sup>
+</td>
+<td>
+0.504<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.044)
+</td>
+<td>
+(0.039)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+47.765<sup>***</sup>
+</td>
+<td>
+24.384<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1.604)
+</td>
+<td>
+(1.765)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+145
+</td>
+<td>
+160
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.151
+</td>
+<td>
+0.509
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.145
+</td>
+<td>
+0.506
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+13.409 (df = 143)
+</td>
+<td>
+11.325 (df = 158)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+25.362<sup>***</sup> (df = 1; 143)
+</td>
+<td>
+163.711<sup>***</sup> (df = 1; 158)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>This study found that in both election cycles, the percentage of citizens in a given district (in the South Region) who voted Democrat was related to the percentage of non_White citizens in that district. The above scatterplot shows that, in 1990 and 2015, the percent of a district’s population that is non-White is positively correlated with the percent of the population who voted Democrat in the next election. While both 1990 and 2015 show positive relationships between % non-White and % voting Democratic, the magnitude of this relationship increased during that time frame. Our 1992 univariate regression model found that for every 1% increase in district’s non-White population, the % voting Democrat was highly likely (significance p&lt;.01) to rise by 0.219 %. Only 14.5% of the variance in the Percent Democratic variable was explained by the percentage of non-White citizens (adjusted r squared=0.145), showing that this variable was not the primary driver of a district’s voting tendencies. The election of 2016 showed a very different story. Our 2016 model shows that for every 1% increase in a district’s percentage of non-White population, the percentage of that district voting Democrat would increase by a half of a percent. This finding was highly significant (p&lt;.01) with an R squared value of 0.5. This means that in the 2016 election, HALF of the variance in the percent voting Democrat within a district could be explained simply by the percentage of the district’s citizens who were not White.</p>
+</div>
+<div id="median-household-income-3" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Median household income</h3>
+<p>(You can use stargazer to summarise both models.)</p>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Pct. voting democratic
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+medhhinc
+</td>
+<td>
+-0.0004<sup>***</sup>
+</td>
+<td>
+0.0001
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.0001)
+</td>
+<td>
+(0.0001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+74.022<sup>***</sup>
+</td>
+<td>
+38.934<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(3.906)
+</td>
+<td>
+(4.510)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+145
+</td>
+<td>
+160
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.172
+</td>
+<td>
+0.008
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.166
+</td>
+<td>
+0.002
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+13.238 (df = 143)
+</td>
+<td>
+16.095 (df = 158)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+29.752<sup>***</sup> (df = 1; 143)
+</td>
+<td>
+1.287 (df = 1; 158)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-14-1.png" width="672" /> The univariate model and scatterplots both suggest that the percentage of citizens who voted Democrat within each district in the South is not closely related to the median household income in that district. The scatterplots show that in 1990, the median household income is negatively correlated with the percent of the population who voted Democrat, while in 2015 there is a slight positive correlation. Although the scatterplots indicate a change in direction, the magnitude of this relationship between percent voting democrat and median household income decreased between 1990 and 2015. The R squared for the univariate model is stronger for 1990 than 2015 but both of these relationships are fairly weak. In 1990, the median household income only explained 16% of the variance in the model, while in 2015, it explained only 0.2% of the variance. The scatterplots confirm the weak correlation, or lack thereof, as the line of best fit hardly passes through the majority of the data points for median household income.</p>
+</div>
+<div id="percent-with-a-bachelors-degree-3" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> Percent with a bachelor’s degree</h3>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Pct. voting democratic
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+badeg_pct
+</td>
+<td>
+-0.621<sup>***</sup>
+</td>
+<td>
+0.224<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.141)
+</td>
+<td>
+(0.111)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+62.428<sup>***</sup>
+</td>
+<td>
+38.516<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(2.303)
+</td>
+<td>
+(2.923)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+145
+</td>
+<td>
+160
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.120
+</td>
+<td>
+0.025
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.114
+</td>
+<td>
+0.019
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+13.650 (df = 143)
+</td>
+<td>
+15.956 (df = 158)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+19.476<sup>***</sup> (df = 1; 143)
+</td>
+<td>
+4.081<sup>**</sup> (df = 1; 158)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-17-1.png" width="672" /> Both the 1992 and 2016 model were found to be significant. In 1992, there is a strong negative relationship between bachelor degree percentage and percent democratic adjusted. The r-squared of the 1992 model tells us that 11.3% of the variation found within the data is explained by the model. In 2016, there is a weak positive relationship between bachelor degree percentage and percent democratic adjusted. The r-squared of the 2016 model tells us that 2.5% of the variation found within the data is explained by the model. In 1992, bachelor degree percentage served as a better indicator of voting habits then in 2016, however, the r-squared was still very low and therefore explains very little variance. From 1992 to 2016, having a bachelor’s degree becomes more likely to predict that you are voting democratic. From 1992 to 2016, the univariate model shows that percent bachelor’s degree changes from being negatively associated with voting democratic to positively associated. The percent of bachelor’s degrees increased in all districts from 1992 to 2016.</p>
+</div>
+<div id="multivariate-models-1" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Multivariate models</h3>
+<pre><code>## nonwht_pct   medhhinc  badeg_pct 
+##   1.085552   4.387013   4.219876</code></pre>
+<pre><code>## nonwht_pct   medhhinc  badeg_pct 
+##   1.003520   3.847536   3.846453</code></pre>
+<pre><code>## 
+##  studentized Breusch-Pagan test
+## 
+## data:  model_se_1990
+## BP = 4.1239, df = 3, p-value = 0.2484</code></pre>
+<pre><code>## 
+##  studentized Breusch-Pagan test
+## 
+## data:  model_se_2015
+## BP = 12.303, df = 3, p-value = 0.006414</code></pre>
+<table style="text-align:center">
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+Model results
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="2">
+pct
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+1992
+</td>
+<td>
+2016
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+nonwht_pct
+</td>
+<td>
+0.172<sup>***</sup>
+</td>
+<td>
+0.501<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.043)
+</td>
+<td>
+(0.039)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+medhhinc
+</td>
+<td>
+-0.0004<sup>**</sup>
+</td>
+<td>
+-0.0001
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.0002)
+</td>
+<td>
+(0.0001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+badeg_pct
+</td>
+<td>
+0.002
+</td>
+<td>
+0.331<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.268)
+</td>
+<td>
+(0.151)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+65.684<sup>***</sup>
+</td>
+<td>
+21.964<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(5.123)
+</td>
+<td>
+(3.794)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+145
+</td>
+<td>
+160
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+R<sup>2</sup>
+</td>
+<td>
+0.256
+</td>
+<td>
+0.534
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.241
+</td>
+<td>
+0.525
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+12.636 (df = 141)
+</td>
+<td>
+11.101 (df = 156)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+F Statistic
+</td>
+<td>
+16.201<sup>***</sup> (df = 3; 141)
+</td>
+<td>
+59.608<sup>***</sup> (df = 3; 156)
+</td>
+</tr>
+<tr>
+<td colspan="3" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="2" style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-20-1.png" width="672" /><img src="sample_book_files/figure-html/unnamed-chunk-20-2.png" width="672" /></p>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  districts_1990$residuals
+## W = 0.98793, p-value = 0.2409</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  districts_2015$residuals
+## W = 0.99512, p-value = 0.8768</code></pre>
+<p><img src="sample_book_files/figure-html/unnamed-chunk-20-3.png" width="672" /><img src="sample_book_files/figure-html/unnamed-chunk-20-4.png" width="672" /></p>
+<p>The 1992 multivariate model fails to explain much of the variance in voting tendencies within South Region districts. The adjusted r-squared value for the regression is 0.24, meaning only 24% of the variance in “% Democrat vote” could be explained by the districts % non-White population, median household income, and % with a bachelor’s degree. The model found that while a district’s racial composition and median income explained some variance in the percentage of the district who voted democrat, these variables were not the primary drivers of political leanings of the South Region. The coefficients for both “% non-White”(0.172, p&lt;.01) and median household income (-0.0004, p&lt;.05) were found to be significant, but the finding for the percentage of the population with a bachelor’s degree or higher (0.002, p&gt;0.1) was insignificant. This tells us that a district’s education level had no real effect on it’s voting tendencies in the 1992 election (p&gt;0.05).</p>
+<p>The 2016 multivariate model was able to explain more than half of the variance in voting tendencies within South Region districts (adj. r-squared of 0.53). The percent non-White variable is responsible for the vast majority of the model’s power to explain variance. In 2016, the model showed that for every percent increase in a district’s non-White population, the district’s expected percentage of Democratic voters increases by a half a percent (0.501, p&lt;.01). A household’s median income was found to no longer be a significant indicator of political leaning (-0.0001, p&gt;0.1).In the 2016 election, having a bachelor’s degree is significantly tied to voting democratic (0.331, p&lt;0.05).</p>
+<p>Both multivariate models were tested for multicollinearity, normality of residuals, and heteroskedasticity. All variables had a VIF score less than 5, telling us that our chosen independent variables did not co-vary with one another. The residuals of both models were normally distributed, as seen in the plot, histograms, and Shapiro-Wilk test results (both p&gt;.05). The normal distribution of these model residuals shows that model error was randomly distributed among the data, and therefore not a problem to the models. There was also no noticeable spatial pattern in the distribution of these residuals. The 2015 model did display heteroskedasticity. With all tests considered, the model results are dependable.</p>
+</div>
+</div>
+<div id="summary-1" class="section level2">
+<h2><span class="header-section-number">3.4</span> Summary</h2>
+<p>Southern districts with higher percentages of non-White citizens tend to have lower median household incomes, and lower percentages of citizens possessing a bachelor’s degree or higher. These facts were true in both the 1992 and 2016 election cycles. We found that the percentage of a district’s population who would vote Democrat (in the South Region) was influenced the most by the percentage of that population who were not White. This fact held true in both election cycles.</p>
+<p>Party leanings of districts in the South Region were less racially charged in 1992 than in 2016. In 1992, the percentage of citizens possessing a college education also influence the percentage that vote Democrat. This changed in the 2016 election, as this variable no longer was able to explain much variance in the dependent variable (% Democrat). Median household income of districts in the South Region did not serve as a good indicator of a district’s political leaning in either election.</p>
+<p>The most important finding of this study is that the political leanings of districts in the South Region seem to have become far more racially charged from the 1992 election to that of 2016. While the independent variable “percent non-White” explained only 14.5% of the variance in “percent voting Democrat” in 1992, this number increased to 50%. In the same time frame, the expected increase in the percentage of Democratic voters (per 1% increase in non-White population) in a district went from 0.172% to .501%. This displays a massive increase in the influence Southern districts’ racial compositions have on political leaning.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="northeast.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="midwest.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

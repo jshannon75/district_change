@@ -1,0 +1,60 @@
+#Concluding thoughts
+
+##Trends in regional models
+All three of our variables were significant in regional models, though the nature of that association varied. Percent not white, non-hispanic was by far the most consistent behavior of voting behavior, with large and positive coefficients in both 1992 and 2016. In all regions, the magnitude and power of this variable increased from 1992 to 2016. In many cases, this one variable had an R^2^ of 0.5 or higher, explaining the majority of variation in partisan voting. 
+
+Other variables were also significant, though these varied by year and region. In the West region, for example, percentage with a Bachelor's degree had a higher coefficient than our race variable in both years, but this variable was also much smaller in a univariate model, indicating potential interaction between education and race within this region. In other regions, higher education rates were positively predictive in 2016, but not in 1992. Household income was the least consistent variable, significant in roughly the half the models and varying between positive (South) and negative (Midwest, West, Northeast) dependening on the region.
+
+###Comparison to national models
+Running the same multivariate models at the national level (see figure below) shows similar paterns to the regional models. Percentage non-white is significant and positive in both years, but the magnitude of the coefficient is larger for the 2016 election (0.30 vs. 0.46). Nationally, this means that an increase of 1% in the non-white population is associated with a 1/3 to 1/2 point increase in the Democratic vote.
+
+Median household income is also significant and negative in these national models, which is consistent in most regional models. The coefficient here is slightly smaller in 2016, but the two are similar: the Democratic share of the vote decreases by 1% for each $4,000 in additional median household income.
+
+Lastly, a bachelor's degree or higher is also strongly and positively predictive of Democratic votes at the national level (0.67 in 1992, 0.73 in 2016), which differs somewhat from the inconsistent results in regional models. In both elections, increased education was strongly associated with more liberal voting patterns. 
+
+As was the case in regional models, our variables explained significantly more of the variance in 2016 (R^2^=0.50) than in 1992 (R^2^=0.27), but both have at least some explanatory power.
+
+```{r, include=FALSE, message=FALSE, warning=FALSE}
+#The whole point of this data is to track what our states were doing in terms of left leaning versus right leaning in general as per percentage. 
+
+library(tidyverse)
+
+district_data = read_csv("https://github.com/jshannon75/geog4300/raw/master/Labs/Final_assignment/districts_data_all.csv") %>%
+  mutate(year=as.character(year))
+
+districts_select<-district_data %>%
+  filter(Region==proj_region) %>%
+  group_by(year) %>%
+  mutate(pct_dem_adj=ifelse(uncontest_r==1,66,ifelse(uncontest_d==1,36,pct_dem))) %>%
+  filter(total_vote!=-99)
+
+districts_1990<-districts_select %>% filter(year=="1990")
+districts_2015<-districts_select %>% filter(year=="2015")
+
+model1990 = lm(pct_dem_adj~nonwht_pct+medhhinc+badeg_pct,data=districts_1990)
+model2015 = lm(pct_dem_adj~nonwht_pct+medhhinc+badeg_pct,data=districts_2015)
+
+summary(model1990)
+summary(model2015)
+
+```
+```{r, results='asis',message=FALSE, warning=FALSE, echo=FALSE}
+stargazer(model1990, model2015, type = 'html',
+          dep.var.caption  = "Model results",
+          dep.var.labels = "Pct. voting democratic",
+          column.labels = c("1992", "2016"))
+```
+
+##Limitations
+Our models are relatively simple in design, using OLS regression with a small number of independent variables. Many of our variables were not normally distributed, and this may have accounted for heteroskedasticity in our multivariate models as well as a few instances where residuals were either not statistically normal or spatially clustered. More complex modelling approaches, such as transforming variables or including interaction effects, may have produced models with more explanatory power.
+
+In addition, we use only two years in this analysis, and this may affect our results. The election in 1992 resulted in a Democratic president while in 2016, Republicans took all three elected bodies at the federal level. Analysis that included additional years that produced less definitive results would potentially provide more insight into the changing electorate. In addition, this project looks only at voting for U.S. House seats, and votes for other voting geographies (state legislatures, for example) or at other scales such as counties might tell a different story.
+
+Our analysis also is done at the district level, and so we cannot account for the ways that changing patterns of redistricting, including partisan or racial gerrymandering, might affect the demographic patterns identified in these districts.
+
+##Final thoughts
+Our models show that the demographic variables we used in this study are more powerful as predictors of partisan voting in 2016 than in 1992. Race, operationalized as percentage classified as non-white, was the most consistent predictor in these models, positively associated with the Democratic vote in both time periods and nearly twice as strong 2016 as in 1992. These models suggest increasing racialization in partisan voting patterns over the last two decades. They also correspond with concerns about the growing influence of white nationalism among some conservative voters.
+
+Income and education are also significant predictors of voting behavior in many models. In most cases, voting becomes more conservative as median household income rises, but this is mediated somewhat by a contasting effect from higher levels of education. A more sophisticated modelling approach might better frame the relationship between these variables and understand their regional variation.
+
+Through this project, our class was able to use descriptive and basic statistical methods using the R software package to explore these voting patterns. We hope that future courses might borrow from this model and make further contributions to understanding in this area.
